@@ -1,7 +1,7 @@
 Name: kdeutils
 Epoch: 6
 Version: 4.3.4
-Release: 6%{?dist}
+Release: 7%{?dist}
 Summary: KDE Utilities
 Group: Applications/System
 License: GPLv2 and LGPLv2 and MIT and BSD
@@ -9,10 +9,13 @@ URL: http://www.kde.org
 Source0: ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.bz2
 # part of oxygen-icon-theme
 Source1: ark-icons.tar.bz2
+Source2: sweeper-icons.tar.bz2
+
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-# hiolor icons
+# fastrack, hiolor icons issue
 Patch1: kdeutils-4.3.4-ark-icons.patch
+Patch2: kdeutils-4.3.4-sweeper-icons-bz#625116.patch
 
 # 4.3 upstream patches
 Patch100: kdeutils-4.3.5.patch
@@ -65,9 +68,11 @@ Requires: kdelibs4%{?_isa} >= %{version}
 %{summary}.
 
 %prep
-%setup -q -a 1
+%setup -q -a 1 -a 2
 
 %patch1 -p1 -b .icons
+%patch2 -p1 -b .bz#625116
+
 %patch100 -p1 -b .kde435
 %patch101 -p1 -b .js
 
@@ -171,6 +176,7 @@ fi
 %{_kde4_datadir}/applications/kde4/*.desktop
 %{_kde4_docdir}/HTML/en/*
 %{_kde4_iconsdir}/hicolor/*/apps/*
+%{_kde4_iconsdir}/hicolor/*/actions/*
 %{_kde4_iconsdir}/oxygen/*/*/*
 %{_datadir}/dbus-1/interfaces/*
 %{_kde4_datadir}/config.kcfg/*
@@ -187,6 +193,9 @@ fi
 
 
 %changelog
+* Mon Jul 18 2011 Than Ngo <than@redhat.com> - 6:4.3.4-7
+- Resolves: bz#625116, sweeper does not have menu icon in GNOME desktop
+
 * Thu Jun 24 2010 Than Ngo <than@redhat.com> 6:4.3.4-6
 - Resolves: bz#587895, ark does not seem to have icon on menu
 - Resolves: bz#595784, disable JS / Java / plugins in khtml file preview
