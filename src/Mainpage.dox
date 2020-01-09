@@ -1,0 +1,45 @@
+/** @mainpage The KDE Utilities API Reference
+
+This section contains the KDE online class reference for the software
+of the KDE Utilities Module.
+
+Included are:
+- <a href="./ark/html/index.html">Ark</a>
+  (<a href="http://utils.kde.org/projects/ark">Homepage</a>) - Archiving tool
+- <a href="./kcalc/html/index.html">KCalc</a>
+  (<a href="http://utils.kde.org/projects/kcalc">Homepage</a>) - Scientific calculator
+- <a href="./kcharselect/html/index.html">KCharSelect</a>
+  (<a href="http://utils.kde.org/projects/kcharselect">Homepage</a>) - Select special characters from any fonts and put them into the clipboard
+- <a href="./kdelirc/html/index.html">KDELirc</a>
+  (<a href="http://utils.kde.org/projects/kdelirc">Homepage</a>) - Front end to lirc, the Linux Infrared Remote Control system
+- <a href="./kdessh/html/index.html">kdessh</a>
+  (<a href="http://utils.kde.org/projects/kdessh">Homepage</a>) - Front end to ssh
+- <a href="./kdf/html/index.html">KDiskFree</a>
+  (<a href="http://utils.kde.org/projects/kdf">Homepage</a>) - like 'df', a graphical free disk space viewer
+- <a href="./kfloppy/html/index.html">KFloppy</a>
+  (<a href="http://utils.kde.org/projects/kfloppy">Homepage</a>) - format a floppy disks with this program
+- <a href="./kgpg/html/index.html">KGpg</a>
+  (<a href="http://utils.kde.org/projects/kgpg">Homepage</a>) - graphical GPG frontend
+- <a href="./ktimer/html/index.html">KTimer</a>
+  (<a href="http://utils.kde.org/projects/ktimer">Homepage</a>) - execute programs after some time
+- <a href="./kwallet/html/index.html">KDE Wallet Manager</a>
+  (<a href="http://utils.kde.org/projects/kwalletmanager">Homepage</a>) - KDE wallet management tool
+- <a href="./okteta/html/index.html">Okteta</a>
+  (<a href="http://utils.kde.org/projects/okteta">Homepage</a>) - Hex editor
+- <a href="./printer-applet/html/index.html">Printer Applet</a>
+  (<a href="http://utils.kde.org/projects/printer-applet">Homepage</a>) - Applet to view current print jobs and configure new printers.
+- <a href="./superkaramba/html/index.html">SuperKaramba</a>
+  (<a href="http://utils.kde.org/projects/superkaramba">Homepage</a>) - version of Karamba with python scripting
+- <a href="./sweeper/html/index.html">Sweeper</a>
+  (<a href="http://utils.kde.org/projects/sweeper">Homepage</a>) - cleans unwanted traces the user leaves on the system
+
+@authors
+many
+@maintainers
+many
+@licenses
+many
+*/
+
+// DOXYGEN_NAME=kdeutils
+// DOXYGEN_ENABLE=YES

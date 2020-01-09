@@ -1,0 +1,72 @@
+<chapter id="tools">
+<title>Tools</title>
+
+<!-- only in 4.3>
+<sect1 id="tools-filesystem">
+<title>Filesystem</title>
+<para>to be written</para>
+</sect1>
+
+<sect1 id="tools-documents">
+<title>Documents</title>
+<para>to be written</para>
+</sect1>
+<-->
+
+<sect1 id="tools-fileinfo">
+<title>File Info</title>
+<para>The view displays some information about the current file,
+    including its type, the location of storage and the size.</para>
+</sect1>
+
+<sect1 id="tools-filter">
+<title>Binary Filter</title>
+    <para>The filter performs binary operations on the selected bytes.
+    After choosing the operation (AND, OR, ROTATE..) the parameters,
+    if any, can be set in the box below. The filter is executed on the use
+    of the <guibutton>Filter</guibutton> button.</para>
+</sect1>
+
+<sect1 id="tools-strings">
+<title>Strings</title>
+    <para>This tool locates the strings in the selected bytes. 
+    After choosing the minimum string length, the strings are grepped for
+    on the use of the <guibutton>Update</guibutton> button.
+    The list of the strings displayed can be narrowed by entering a
+    filter term.
+   </para>
+</sect1>
+
+<sect1 id="tools-bytetable">
+<title>Byte Table</title>
+
+    <para>The table lists all possible byte values, both as character and
+    numerical value.</para>
+    <para>The selected value can be inserted at the cursor position for a
+    defined number of bytes. This can be achieved by using the <guibutton>Insert</guibutton>
+    button or double-clicking the line in the table.</para>
+</sect1>
+
+<sect1 id="tools-statistics">
+<title>Statistics</title>
+    <para>The view displays a statistic for the selected bytes.
+    The statistic gives the frequency of the occurrence of each byte value
+    in the selection.
+    It can be brought uptodate by using the <guibutton>Update</guibutton>
+    button.</para>
+</sect1>
+
+<sect1 id="tools-decodingtable">
+<title>Decoding Table</title>
+
+    <para>The table displays the value of the byte or the bytes starting
+    at the cursor, interpreted as common simple data types like Integer or Float.</para>
+</sect1>
+
+<!-- not in released version
+<sect1 id="tools-versions">
+<title>Versions</title>
+<para>to be written</para>
+</sect1>
+-->
+</chapter>
