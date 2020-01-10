@@ -2,7 +2,7 @@
 Name: kdeutils
 Epoch: 6
 Version: 4.10.5
-Release: 2%{?dist}
+Release: 3%{?dist}
 Summary: KDE Utilities
 
 Group: Applications/System
@@ -74,6 +74,9 @@ Includes:
 
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 6:4.10.5-3
+- Mass rebuild 2013-12-27
+
 * Mon Jul 22 2013 Than Ngo <than@redhat.com> - 6:4.10.5-2
 - add fedora/rhel condition
 
